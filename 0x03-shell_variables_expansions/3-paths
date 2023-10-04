@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Number of directories in PATH: $(grep -o ":" <<< "$PATH" | wc -l)"
+echo $(('grep -o ":" <<< "$PATH" | wc -l)'+ 1))
